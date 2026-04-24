@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="Itineraries.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="logo.png">
+  <title>Itineraires - MoroCulture</title>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./photos/logo.png" alt="logo" class="logo me-2">
+          <span class="site">MoroCulture</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="Découvrir le Maroc.html">Découvrir le Maroc</a></li>
+            <li class="nav-item"><a class="nav-link" href="Villes.html">Villes</a></li>
+            <li class="nav-item"><a class="nav-link" href="Gastronomie.html">Gastronomie</a></li>
+            <li class="nav-item"><a class="nav-link" href="Artisanat.html">Artisanat</a></li>
+            <li class="nav-item"><a class="nav-link" href="Festival.html">Festivals</a></li>
+            <li class="nav-item"><a class="nav-link active">Itineraries</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <section class="text-center my-5">
+    <h1 class="titre">Itinéraires au Maroc</h1>
+    <p class="prg lead">Découvrez le Maroc à travers des voyages organisés par des agences fiables.</p>
+  </section>
+  <!-- Accordion Itineraries -->
+  <section class="container mb-5">
+    <div class="accordion" id="itineraryAccordion">
+
+      <!-- Itinéraire 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Marrakech en 3 jours
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#itineraryAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Jour 1 : Médina et souks</li>
+              <li>Jour 2 : Jardin Majorelle et Palmeraie</li>
+              <li>Jour 3 : Excursion dans le désert d'Agafay</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Itinéraire 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Circuit Fès & Meknès
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Jour 1 : Médina de Fès et tanneries</li>
+              <li>Jour 2 : Volubilis et Meknès</li>
+              <li>Jour 3 : Découverte artisanat et gastronomie locale</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Agences -->
+  <section class="container my-5">
+    <h2 class=" titre text-center mb-4">Agences de Voyage Recommandées</h2>
+    <div class="row g-4">
+
+      <!-- Agence 1 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./photos/112363_4122994_639356_image.png" class="card-img-top" alt="Atlas voyage">
+          <div class="card-body">
+            <h5 class="card-title">Atlas-Voyages</h5>
+            <p class="card-text">Voyages culturels et circuits guidés au Maroc</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="https://aravcs-travel.com/atlas-voyages-siege/" class="btn btn-info text-white">Consulter</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agence 2 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./photos/Logo-SD-1-2.jpg" class="card-img-top" alt="Sahara Découverte">
+          <div class="card-body">
+            <h5 class="card-title">Sahara Découverte</h5>
+            <p class="card-text">Excursions dans le désert et aventures</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="https://www.saharadecouverte.com/" class="btn btn-info text-white">Consulter</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agence 3 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./photos/images.jpg"  class="card-img-top" alt="Oasis Tours">
+          <div class="card-body">
+            <h5 class="card-title">Oasis Tours</h5>
+            <p class="card-text">Excursions nature et culture</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="https://oasismogadortours.com/" class="btn btn-info text-white">Consulter</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-custom text-white">
+    <div class="container text-center py-3">
+      <p>&copy; 2025 MoroCulture. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

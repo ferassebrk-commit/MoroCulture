@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marrakech — MoroCulture</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="allVilles.css" rel="stylesheet">
+  <style>
+    body{
+        background-image: url('https://www.tourradar.com/days-to-come/wp-content/uploads/2018/01/marrakech.jpg');
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="../photos/logo.png" alt="logo" class="logo me-2">
+        <span class="site">MoroCulture</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Découvrir le Maroc.html">Découvrir le Maroc</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../Villes.html">Villes</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Gastronomie.html">Gastronomie</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Artisanat.html">Artisanat</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Festival.html">Festivals</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Itineraries.html">Itineraries</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold">Marrakech — La ville rouge du Maroc</h1>
+        <p class="prg lead">Découvrez Marrakech, ville historique et culturelle, célèbre pour sa Médina, ses jardins et son ambiance unique. Guides, lieux, activités et culture locale pour visiteurs et résidents.</p>
+        <a href="#attractions" class="btn btn-primary btn-lg">Explorer</a>
+        <a href="#culture" class="btn btn-secondary btn-lg">Culture</a>
+      </div>
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="card bg-white shadow-sm">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps?q=marrakech&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="container my-5">
+
+  <!-- ABOUT / Intro + Quick facts -->
+  <section id="about" class="mb-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2>À propos de Marrakech</h2>
+        <p class="prg">Marrakech, surnommée la "ville rouge", est une des destinations les plus célèbres du Maroc. Sa Médina, ses remparts, ses jardins et son architecture unique en font un lieu incontournable.</p>
+      </div>
+      <div class="col-lg-4">
+        <div class="cont bg-light p-3 rounded shadow-sm">
+          <h6>Faits rapides</h6>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Population:</strong> ~1M</li>
+            <li><strong>Région:</strong> Marrakech-Safi</li>
+            <li><strong>Langues:</strong> Arabe, Français</li>
+            <li><strong>Climat:</strong> Semi-aride, étés chauds et hivers doux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURE SECTION -->
+  <section id="culture" class="mb-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>Culture</h3>
+        <p class="prg">Marrakech possède une culture riche mêlant traditions marocaines et influence artistique contemporaine. La ville est célèbre pour ses souks, ses festivals, ses musiciens et ses artisans. Les jardins, riads et palais reflètent l'élégance architecturale marocaine.</p>
+        <p class="prg small text-muted">Mention spéciale: la gastronomie marrakchie marie plats traditionnels et influences modernes.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card p-3 card-spot">
+              <h6>Artisanat</h6>
+              <p class="small">Souks et ateliers traditionnels.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card p-3 card-spot">
+              <h6>Musique & Festivals</h6>
+              <p class="small">Gnaoua, musique populaire et festivals internationaux.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card p-3 card-spot">
+              <h6>Jardins</h6>
+              <p class="small">Jardins Majorelle, Menara et autres espaces verts.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card p-3 card-spot">
+              <h6>Cuisine</h6>
+              <p class="small">Spécialités locales et marchés gastronomiques.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTRACTIONS GRID -->
+  <section id="attractions" class="mb-5">
+    <h3>Sites incontournables</h3>
+    <div class="row g-4 mt-3">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/mosquee-Koutoubia-laimportante-Marrakech_0.webp" class="card-img-top" alt="Koutoubia">
+          <div class="card-body">
+            <h5 class="card-title">Mosquée Koutoubia</h5>
+            <p class="card-text small">Grande mosquée emblématique et repère architectural de Marrakech.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/le-jardin-majorelle-marrakech.jpg" class="card-img-top" alt="Jardins Majorelle">
+          <div class="card-body">
+            <h5 class="card-title">Jardins Majorelle</h5>
+            <p class="card-text small">Jardin botanique luxuriant, célèbre pour ses couleurs et collection de plantes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/894d31_2329dd45feec43b19be6588950052ecd~mv2.avif" class="card-img-top" alt="Palais de la Bahia">
+          <div class="card-body">
+            <h5 class="card-title">Palais de la Bahia</h5>
+            <p class="card-text small">Chef-d'œuvre architectural du XIXᵉ siècle avec magnifiques jardins et patios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/place-jeema-el-fna-nuit.png" class="card-img-top" alt="Place Jemaa el-Fna">
+          <div class="card-body">
+            <h5 class="card-title">Place Jemaa el-Fna</h5>
+            <p class="card-text small">Place animée avec spectacles, marchands et restaurants typiques.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/d7.jpg" class="card-img-top" alt="Les Souks de la Médina">
+          <div class="card-body">
+            <h5 class="card-title">Les Souks de la Médina</h5>
+            <p class="card-text small">Labyrinthe d’artisanat, textiles, bijoux et objets traditionnels. Expérience authentique de la culture marocaine.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/les-jardin-de-la-menara.webp" class="card-img-top" alt="Jardin de la Menara">
+          <div class="card-body">
+            <h5 class="card-title">Jardin de la Menara</h5>
+            <p class="card-text small">Grand jardin historique avec bassin central, oliveraies et vue sur l’Atlas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/caption (1).jpg" class="card-img-top" alt="Musée de Marrakech">
+          <div class="card-body">
+            <h5 class="card-title">Musée de Marrakech</h5>
+            <p class="card-text small">Palais rénové avec expositions d’art marocain traditionnel, calligraphie, poterie et costumes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/Saadian-Tombs-Guided-Tours.webp" class="card-img-top" alt="Saadian Tombs">
+          <div class="card-body">
+            <h5 class="card-title">Saadian Tombs</h5>
+            <p class="card-text small">Tombeaux historiques du XVIᵉ siècle, célèbres pour leurs décorations raffinées et mosaïques.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img class="img-card" src="../photos/w=469,h=313.avif" class="card-img-top" alt="Palais El Badi">
+          <div class="card-body">
+            <h5 class="card-title">Palais El Badi</h5>
+            <p class="card-text small">Palais en ruines impressionnant, témoin de la grandeur passée, souvent utilisé pour événements et festivals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<a href="../Villes.html" class="btn btn-dark mt-5">← Retour à les villes</a>
+</main>
+
+<footer class="footer bg-custom text-white">
+  <div class="container text-center py-3">
+    <p>&copy; 2025 MoroCulture. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

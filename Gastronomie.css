@@ -1,0 +1,447 @@
+/* Reset / base */
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+    height: 100%; 
+    font-family: "Poppins", system-ui, Arial, sans-serif; 
+}
+
+/* Background */
+body{
+    background-image: url('./photos/Erg-Chebbi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* Navbar custom */
+.bg-custom {
+    background-color: rgba(97, 130, 109, 0.94) !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+.logo { 
+    height: 40px; 
+    width: auto; 
+}
+
+.site {
+    color: rgb(113, 29, 29);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-weight: 700;
+}
+
+/* Navigation links */
+.navbar-nav .nav-link {
+    color: rgb(2, 4, 74) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+    text-decoration: underline;
+    text-decoration-color: rgb(170, 139, 88);
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link.active {
+    color: white !important;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+
+/* Titre principal */
+.titre{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: clamp(1.3rem, 4vw, 2rem);
+    color: rgba(255, 0, 0, 0.776);
+    background-color: rgba(255, 255, 255, 0.30);
+    margin: 40px auto 30px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 560px;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+/* Boutons de navigation */
+.but{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 10px;
+}
+
+.but .btn {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: clamp(0.85rem, 1.8vw, 1.1rem);
+    color: rgb(0, 0, 0) !important;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.but .btn:hover{
+    transform: scale(1.1) !important;
+}
+
+/* Description */
+.desc{
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 3px solid rgb(145, 118, 82);
+    border-radius: 24px;
+    max-width: 600px;
+    width: 90%;
+    padding: 1.5rem;
+    margin: 0 auto 30px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 700;
+    text-align: center;
+    animation: shadow 5s infinite ease-in-out;
+}
+
+@keyframes shadow {
+    0%, 100% {
+        transform: scale(1.0);
+        box-shadow: 0px 0px 0px 0px #CFA45D;
+        color: rgb(0, 0, 0);
+    }
+    25% {
+        color: rgb(48, 30, 30);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 10px 10px 10px 10px #CFA45D;
+        color: rgb(132, 30, 30);
+    }
+    75% {
+        color: rgb(27, 57, 18);
+    }
+}
+
+/* Cartes gastronomiques */
+.gastronomy-card {
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 250px;
+    position: relative;
+}
+
+.gastronomy-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.gastronomy-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.gastronomy-card:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gastronomy-card:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay h5 {
+    margin-bottom: 8px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 700;
+}
+
+.overlay p {
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+
+
+/* Sous-titres */
+.sous-titre1,
+.sous-titre2,
+.sous-titre3 {
+    color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: clamp(1.3rem, 3.5vw, 2rem);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.30);
+    margin: 60px auto 30px;
+    padding: 1rem;
+    width: 90%;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.sous-titre1 {
+    max-width: 400px;
+}
+
+.sous-titre2 {
+    max-width: 300px;
+}
+
+.sous-titre3 {
+    max-width: 450px;
+}
+
+/* Sections */
+section, aside, nav {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(97, 130, 109, 0.934);
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 35px;
+    border-radius: 30px;
+}
+
+
+/* Media Queries */
+
+/* Large desktop (≤1400px) */
+@media (max-width: 1200px) {
+    section {
+        gap: 25px;
+    }
+    
+    .card {
+        max-width: 320px !important;
+    }
+}
+
+/* Tablettes (≤992px) */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.7rem 1rem;
+    }
+    
+    section {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .card {
+        max-width: 300px !important;
+    }
+    
+    .card-img-top {
+        height: 220px;
+    }
+}
+
+/* Tablettes portrait (≤768px) */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 30px;
+    }
+    
+    .titre {
+        margin-top: 30px;
+        padding: 0.8rem;
+    }
+    
+    .p1 {
+        padding: 1.2rem;
+    }
+    
+    .divider {
+        margin: 15px auto;
+    }
+    
+    section {
+        margin-top: 30px !important;
+        gap: 20px;
+    }
+    
+    .card {
+        max-width: 400px !important;
+    }
+    
+    .card-img-top {
+        height: 250px;
+    }
+    
+    footer {
+        margin-top: 40px;
+        padding: 15px;
+    }
+}
+
+/* Smartphones (≤576px) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        height: 35px;
+    }
+    
+    .titre {
+        width: 95%;
+        margin-top: 20px;
+        padding: 0.7rem;
+    }
+    
+    .p1 {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .divider {
+        width: 95%;
+    }
+    
+    section {
+        margin-top: 25px !important;
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .card {
+        max-width: 100% !important;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .card-body {
+        padding: 1.2rem;
+    }
+    
+    footer {
+        margin-top: 30px;
+        padding: 12px;
+        border-radius: 20px;
+    }
+    
+    footer a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+/* Très petits smartphones (≤380px) */
+@media (max-width: 380px) {
+    .site {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        height: 30px;
+    }
+    
+    .titre {
+        font-size: 1.2rem;
+    }
+    
+    .p1 {
+        font-size: 0.85rem;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Amélioration pour les écrans tactiles */
+@media (hover: none) and (pointer: coarse) {
+    .navbar-nav .nav-link {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .card {
+        transition: transform 0.2s ease;
+    }
+    
+    .card:active {
+        transform: scale(0.98);
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Orientation paysage sur mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .titre {
+        margin-top: 20px;
+    }
+    
+    section {
+        margin-top: 20px !important;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="photos/logo.png">
+  <title>MoroCulture</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./photos/logo.png" alt="logo" class="logo me-2">
+          <span class="site">MoroCulture</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" >Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="Découvrir le Maroc.html">Découvrir le Maroc</a></li>
+            <li class="nav-item"><a class="nav-link" href="Villes.html">Villes</a></li>
+            <li class="nav-item"><a class="nav-link" href="Gastronomie.html">Gastronomie</a></li>
+            <li class="nav-item"><a class="nav-link" href="Artisanat.html">Artisanat</a></li>
+            <li class="nav-item"><a class="nav-link" href="Festival.html">Festivals</a></li>
+            <li class="nav-item"><a class="nav-link" href="Itineraries.html">Itineraries</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class=" my-4">
+    <h1 class="phr text-center mx-auto">Le Maroc : Carrefour des cultures et des inspirations</h1>
+
+    <div class="row align-items-center my-4 gap-3">
+      <div class="col-12  text-center">
+        <img src="./photos/logo.png" alt="carte" width="250px" class="mx-auto d-block img-fluid carte img-fluid">
+      </div>
+
+      <div class="col-12 ">
+        <div class="container magie p-3">
+          <h3 class="titre1">« Vivez l’expérience unique du Maroc »</h3>
+          <p class="p1">
+            MoroCulture vous ouvre les portes du Maroc authentique : découvrez ses villes emblématiques, savourez
+            sa gastronomie unique, admirez son artisanat traditionnel et plongez dans la richesse de ses festivals.
+            Un voyage culturel inoubliable vous attend.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards responsive grid -->
+    <section class="row g-3 my-3">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center cards">
+          <img src="./photos/vue de fes mosquee"
+               class="card-img-top imgcard" alt="Villes">
+          <div class="card-body">
+            <h5 class="card-title">Villes emblématiques</h5>
+            <p class="card-text">Découvrez les villes les plus fascinantes du Maroc</p>
+            <a href="Villes.html" class="stretched-link">» Voir plus</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center cards">
+          <img src="./photos/table marocaine.jpg"
+               class="card-img-top imgcard" alt="Gastronomie">
+          <div class="card-body">
+            <h5 class="card-title">Gastronomie</h5>
+            <p class="card-text">Savourez les plats traditionnels et les saveurs uniques du Maroc</p>
+            <a href="Gastronomie.html" class="stretched-link">» Voir plus</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center cards">
+          <img src="./photos/artisant.jpg"
+               class="card-img-top imgcard" alt="Artisanat">
+          <div class="card-body">
+            <h5 class="card-title">Artisanat</h5>
+            <p class="card-text">Admirez le savoir-faire exceptionnel des artisans marocains</p>
+            <a href="Artisanat.html" class="stretched-link">» Voir plus</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center cards">
+          <img src="./photos/issawa festival.webp"
+               class="card-img-top imgcard" alt="Festivals">
+          <div class="card-body">
+            <h5 class="card-title">Festivals</h5>
+            <p class="card-text">Vivez l’ambiance festive et colorée des événements traditionnels.</p>
+            <a href="Festival.html" class="stretched-link">» Voir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row VD my-4 g-3">
+      <aside class="col-12 col-md-7">
+        <div class="magie2 p-3">
+          <h3 class="titre1">« la culture Marocaine »</h3>
+          <p class="p1">
+            La culture marocaine est riche et diversifiée, mêlant influences amazighes, arabes, andalouses et africaines.
+            Elle se distingue par ses arts traditionnels, sa musique variée, sa cuisine renommée et ses fortes valeurs
+            d’hospitalité et de famille.
+          </p>
+        </div>
+      </aside>
+
+      <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+        <video autoplay muted loop class="video-responsive">
+          <source src="./photos/Morocco in Motion  Travel Video.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer bg-custom text-white">
+    <div class="container text-center py-3">
+      <p>&copy; 2025 MoroCulture. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

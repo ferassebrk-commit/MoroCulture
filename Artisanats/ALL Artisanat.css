@@ -1,0 +1,406 @@
+/* Reset / base */
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+    height: 100%; 
+    font-family: "Poppins", system-ui, Arial, sans-serif; 
+}
+
+/* Background */
+body{
+    background-image: url('../photos/Erg-Chebbi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* Navbar custom */
+.bg-custom {
+    background-color: rgba(97, 130, 109, 0.94) !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+.logo { 
+    height: 40px; 
+    width: auto; 
+}
+
+.site {
+    color: rgb(113, 29, 29);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-weight: 700;
+}
+
+
+.navbar-nav .nav-link {
+    color: rgb(2, 4, 74) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+    text-decoration: underline;
+    text-decoration-color: rgb(170, 139, 88);
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link.active {
+    color: white !important;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+/* ============================
+   HERO SECTION
+=============================== */
+
+.hero {
+    position: relative;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.sous-titre{
+    color: rgb(0, 183, 255) !important;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+/* ============================
+   SECTION TITLES
+=============================== */
+
+.section-title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    border-left: 5px solid #061c4a !important;
+    color:#af0303 !important;
+    padding-left: 12px;
+}
+
+p{
+    font-size: medium;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h5, h4{
+    color: rgb(0, 84, 13) !important;
+}
+
+.card{
+    background-color: #cfa35ddf !important;
+}
+
+/* ============================
+   TIMELINE
+=============================== */
+
+.timeline {
+    border-left: 3px solid #c49b2d;
+    margin-left: 20px;
+    padding-left: 20px;
+   
+    
+}
+
+.timeline-point {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-point h5 {
+    font-weight: bold;
+}
+
+.timeline-point::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #c49b2d;
+    border-radius: 50%;
+    position: absolute;
+    left: -32px;
+    top: 6px;
+}
+.time{
+    margin-top: 30px !important;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: fit-content !important;
+}
+
+/* ============================
+   INFO CARDS
+=============================== */
+
+.info-card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   SIDE IMAGE
+=============================== */
+
+.side-img {
+    border-radius: 12px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.last{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(97, 130, 109, 0.934);
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 35px;
+    border-radius: 30px;
+}
+
+/* Media Queries */
+
+/* Large tablets et desktop moyen (≤1200px) */
+@media (max-width: 1200px) {
+    section {
+        gap: 25px;
+    }
+    
+    .card {
+        max-width: 320px !important;
+    }
+}
+
+/* Tablettes (≤992px) */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.7rem 1rem;
+    }
+    
+    section {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .card {
+        max-width: 300px !important;
+    }
+    
+    .card-img-top {
+        height: 220px;
+    }
+}
+
+/* Tablettes portrait (≤768px) */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 30px;
+    }
+    
+    .titre {
+        margin-top: 30px;
+        padding: 0.8rem;
+    }
+    
+    .p1 {
+        padding: 1.2rem;
+    }
+    
+    .divider {
+        margin: 15px auto;
+    }
+    
+    section {
+        margin-top: 30px !important;
+        gap: 20px;
+    }
+    
+    .card {
+        max-width: 400px !important;
+    }
+    
+    .card-img-top {
+        height: 250px;
+    }
+    
+    footer {
+        margin-top: 40px;
+        padding: 15px;
+    }
+}
+
+/* Smartphones (≤576px) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        height: 35px;
+    }
+    
+    .titre {
+        width: 95%;
+        margin-top: 20px;
+        padding: 0.7rem;
+    }
+    
+    .p1 {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .divider {
+        width: 95%;
+    }
+    
+    section {
+        margin-top: 25px !important;
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .card {
+        max-width: 100% !important;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .card-body {
+        padding: 1.2rem;
+    }
+    
+    footer {
+        margin-top: 30px;
+        padding: 12px;
+        border-radius: 20px;
+    }
+    
+    footer a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+/* Très petits smartphones (≤380px) */
+@media (max-width: 380px) {
+    .site {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        height: 30px;
+    }
+    
+    .titre {
+        font-size: 1.2rem;
+    }
+    
+    .p1 {
+        font-size: 0.85rem;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Amélioration pour les écrans tactiles */
+@media (hover: none) and (pointer: coarse) {
+    .navbar-nav .nav-link {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .card {
+        transition: transform 0.2s ease;
+    }
+    
+    .card:active {
+        transform: scale(0.98);
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Orientation paysage sur mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .titre {
+        margin-top: 20px;
+    }
+    
+    section {
+        margin-top: 20px !important;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+

@@ -1,0 +1,370 @@
+/* Reset / base */
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+    height: 100%; 
+    font-family: "Poppins", system-ui, Arial, sans-serif; 
+}
+
+/* Background */
+body{
+    background-image: url('./photos/Erg-Chebbi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* Navbar custom */
+.bg-custom {
+    background-color: rgba(97, 130, 109, 0.94) !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+.logo { 
+    height: 40px; 
+    width: auto; 
+}
+
+.site {
+    color: rgb(113, 29, 29);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-weight: 700;
+}
+
+/* Navigation links */
+.navbar-nav .nav-link {
+    color: rgb(2, 4, 74) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+    text-decoration: underline;
+    text-decoration-color: rgb(170, 139, 88);
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link.active {
+    color: white !important;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+
+/* Hero phrase */
+.phr{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2.5vw, 2rem); /* responsive size */
+  color: rgba(255, 0, 0, 0.85);
+  background-color: rgba(255,255,255,0.32);
+  margin: 1.5rem auto;
+  padding: 0.6rem 1rem;
+  max-width: 900px;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+
+
+/* Card / content styles */
+.cards{
+  background-color: #CFA45D !important ; 
+}
+.magie {
+  background-color: rgba(255,255,255,0.55);
+  border: 3px solid rgb(145,118,82);
+  border-radius: 24px;
+}
+.magie2 {
+  background-color: rgba(255,255,255,0.55);
+  border: 3px solid rgb(145,118,82);
+  border-radius: 24px;
+}
+
+/* Text styles */
+.titre1{
+  font-family: Cambria, Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgb(147,3,3);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.p1{
+  color: black;
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+/* Carte image (left) */
+.carte {
+  animation: bougerCarte 4s infinite ease-in-out;
+  height: auto;
+  max-width: 320px;
+  border-radius: 10px;
+  box-shadow: 5px 8px rgba(0,0,0,0.5);
+}
+
+/* Animation */
+@keyframes bougerCarte {
+  0% { transform: translateX(6px); }
+  50% { transform: translateX(12px); }
+  100% { transform: translateX(6px); }
+}
+
+/* Cards grid */
+.cards {
+  background-color: #CFA45D;
+  border: none;
+  transition: transform .25s, box-shadow .25s;
+}
+.cards:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+.imgcard {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+.card-title {
+  font-style: italic;
+  color: rgb(147,3,3);
+  font-weight: 600;
+}
+.card-text {
+  font-weight: 600;
+}
+
+/* Video responsive */
+.video-responsive {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+
+footer {
+    background-color: rgba(97, 130, 109, 0.934);
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 35px;
+    border-radius: 30px;
+}
+
+/* Small screens tweaks */
+@media (max-width: 1200px) {
+    section {
+        gap: 25px;
+    }
+    
+    .card {
+        max-width: 320px !important;
+    }
+}
+
+/* Tablettes (≤992px) */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.7rem 1rem;
+    }
+    
+    section {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .card {
+        max-width: 300px !important;
+    }
+    
+    .card-img-top {
+        height: 220px;
+    }
+}
+
+/* Tablettes portrait (≤768px) */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 30px;
+    }
+    
+    .titre {
+        margin-top: 30px;
+        padding: 0.8rem;
+    }
+    
+    .p1 {
+        padding: 1.2rem;
+    }
+    
+    .divider {
+        margin: 15px auto;
+    }
+    
+    section {
+        margin-top: 30px !important;
+        gap: 20px;
+    }
+    
+    .card {
+        max-width: 400px !important;
+    }
+    
+    .card-img-top {
+        height: 250px;
+    }
+    
+    footer {
+        margin-top: 40px;
+        padding: 15px;
+    }
+}
+
+/* Smartphones (≤576px) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        height: 35px;
+    }
+    
+    .titre {
+        width: 95%;
+        margin-top: 20px;
+        padding: 0.7rem;
+    }
+    
+    .p1 {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .divider {
+        width: 95%;
+    }
+    
+    section {
+        margin-top: 25px !important;
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .card {
+        max-width: 100% !important;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .card-body {
+        padding: 1.2rem;
+    }
+    
+    footer {
+        margin-top: 30px;
+        padding: 12px;
+        border-radius: 20px;
+    }
+    
+    footer a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+/* Très petits smartphones (≤380px) */
+@media (max-width: 380px) {
+    .site {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        height: 30px;
+    }
+    
+    .titre {
+        font-size: 1.2rem;
+    }
+    
+    .p1 {
+        font-size: 0.85rem;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Amélioration pour les écrans tactiles */
+@media (hover: none) and (pointer: coarse) {
+    .navbar-nav .nav-link {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .card {
+        transition: transform 0.2s ease;
+    }
+    
+    .card:active {
+        transform: scale(0.98);
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Orientation paysage sur mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .titre {
+        margin-top: 20px;
+    }
+    
+    section {
+        margin-top: 20px !important;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+}
